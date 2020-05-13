@@ -1,0 +1,45 @@
+#Landing-Page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Landing-Page-description {
+  max-width: 80%;
+  margin: 2rem 0;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+#Landing-Page-puppies {
+  max-width: 60%;
+  border-radius: 50%;
+  height: auto;
+}
+
+#Landing-Page-button {
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 2rem;
+  padding: .5rem .75rem;
+  background-color: darkcyan;
+  color: white;
+  border-radius: .5rem;
+}
+
+#Landing-Page-button:hover {
+  cursor: pointer;
+  color: lightgray;
+}
+
+
+@media screen and (min-width: 481px) {
+  #Landing-Page-puppies {
+    font-size: 1.5rem;
+  }
+  #Landing-Page-description {
+    font-size: 1.5rem;
+  }
+}
+
