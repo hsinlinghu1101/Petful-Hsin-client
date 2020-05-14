@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "CLIENT_PROJECT_NAME",
-  "alias": "CLIENT_PROJECT_NAME",
+  "name": "Petful",
+  "alias": "Petful",
   "routes": [
     {
       "src": "^/static/(.*)",
@@ -23,5 +23,11 @@
       "src": ".*",
       "dest": "/index.html"
     }
-  ]
- }
+  ],
+  "build": {
+    "env": {
+    "REACT_APP_API_ENDPOINT": "https://obscure-sierra-79316.herokuapp.com/api"
+    }
+  }
+}
+ 
