@@ -135,13 +135,13 @@ export default class PeopleList extends Component {
 
                 {Object.values(this.props.people).map((x, index) => this.generatePeopleJSX(x, index))}
 
-                <button className='join' onClick={this.handleclicked}> Join</button>
+                <button className='join button' onClick={this.handleclicked}>Join the list</button>
                 {this.state.clicked
                     ? <form onSubmit={this.addPerson}>
                         <label htmlFor='newPerson'>Your Name:</label>
                         <input type='text' name='newPerson' id='newPerson' required></input><br></br>
-                        <button type='submit'>submit</button>
-                        <button type='button' onClick={this.handleCancel}>cancel</button>
+                        <button className='button' type='submit'>submit</button>
+                        <button className='button' type='button' onClick={this.handleCancel}>cancel</button>
                     </form>
                     : <div></div>
                 }

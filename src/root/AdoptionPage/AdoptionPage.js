@@ -147,11 +147,11 @@ tock(){
       <div id='Adoption-Page'> 
         {error && <p>{error}</p>}
         <div className='pets'>
-        <h1>Dogs</h1>
+        
         <Pet pet={dogs}/>
         </div>
         <div className='pets'>
-        <h1>Cats</h1>
+        
         <Pet pet={cats}/>
         </div>
         <PeopleList createDataSuccess={this.createDataSuccess}  stopFive={this.stopFive} stopTock={this.stopTock} people={peopleData} dogs={dogs} cats={cats}/>

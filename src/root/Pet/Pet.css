@@ -1,17 +1,20 @@
 .pet {
+  max-width: 400px;
   display: inline-block;
   padding: 1rem;
   border: .3rem solid darkcyan;
-  border-radius: .25rem;
+  border-radius: 5px;
   margin-right: 20px;
 }
-
-.pet > h3 {
-  font-size: 1.5rem;
+.intro{
+  text-align:left;
+  margin: .25rem 0;
+}
+.intro > h3 {
   margin: .25rem 0;
 }
 
-.pet > p {
+.intro > p {
   font-size: 1rem;
   margin: .25rem 0;
 }
@@ -22,12 +25,9 @@
 
 @media screen and (min-width: 481px){
   .pet > img {
-    max-height: 200px;
+    max-height: 250px;
   }
-  .pet > h3 {
-    font-size: 2rem;
-    margin: .25rem 0;
-  }
+  
 }
 
 
