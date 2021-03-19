@@ -1,6 +1,6 @@
 # Petful Client
 
-Live: https://petful-project.now.sh/
+Live: https://petful-nu.vercel.app/
 
 Client Repo: https://github.com/hsinlinghu1101/Petful-Hsin-client.git
 
@@ -15,10 +15,6 @@ Technology Used
     React
     Node
 
-Screenshots
 
-![landing](https://user-images.githubusercontent.com/47201201/81895555-5943b100-9567-11ea-9fc0-c12ac40a5668.png)
 
-![adoption](https://user-images.githubusercontent.com/47201201/81895572-66f93680-9567-11ea-8162-af11e3828069.png)
-
-Author: Hsin Ling HU
+Author: Hsin Ling Hu
