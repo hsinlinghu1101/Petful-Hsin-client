@@ -22,14 +22,14 @@ export default class AdoptionPage extends React.Component{
         'Gail Forcewind',
         'Paige Turner',
         'Bob Frapples',
-        'Mario Speedwagon',
-        'Petey Cruiser',
-        'Anna Sthesia',
-        'Paul Molive',
-        'Anna Mull',
-        'Gail Forcewind',
-        'Paige Turner',
-        'Bob Frapples'
+        'Mark Speedwagon',
+        'Petty Cruiser',
+        'Amy Sthesia',
+        'Patrick Molive',
+        'Alice Mull',
+        'Gary Forcewind',
+        'Patty Turner',
+        'Ben Frapples'
       ],
       newPerson: '',
       indexAdopter:0  
@@ -147,11 +147,9 @@ tock(){
       <div id='Adoption-Page'> 
         {error && <p>{error}</p>}
         <div className='pets'>
-        
         <Pet pet={dogs}/>
         </div>
         <div className='pets'>
-        
         <Pet pet={cats}/>
         </div>
         <PeopleList createDataSuccess={this.createDataSuccess}  stopFive={this.stopFive} stopTock={this.stopTock} people={peopleData} dogs={dogs} cats={cats}/>

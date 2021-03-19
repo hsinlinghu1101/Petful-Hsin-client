@@ -1,6 +1,12 @@
 
-.People-List {
+#People-List {
   font-size: 15px;
+  width:80%;
+  display: flex;
+  margin-left:auto;
+  margin-right:auto;
+  justify-content: space-around;
+  flex-wrap:wrap;
 }
 
 .first {
@@ -13,7 +19,7 @@ button {
   padding: .3rem .5rem;
   background-color: #005C5C;
   color: white;
-  border-radius: .5rem;
+  border-radius: 5px;
 }
 button :hover {
   cursor: pointer;
@@ -24,13 +30,16 @@ button :hover {
 
 .join{
   display: block;
+  margin-top: 20px;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
+  font-size: 20px;
 }
 
 .adopt{
   text-decoration: none;
+  font-size: 16px;
   margin: .5rem;
   padding: .3rem .5rem;
 }
@@ -38,10 +47,20 @@ form{
   padding: 10px;
   border: .3rem solid darkcyan;
   border-radius: 5px;
-  margin-left:auto;
-  margin-right:auto;
+  align-self: center;
+  height: 100px;
 }
 
+form .button{
+  font-size: 16px;
+  margin: 20px;
+  padding: .3rem .5rem;
+  
+  
+}
+.success{
+  color:rgb(250, 115, 137);
+}
 label{
   margin-right: 5px;
 }
@@ -50,16 +69,14 @@ label{
   
    #People-List {
     font-size: 20px;
+    width:60%;
   }
   
   #People-List > form{
     max-width: 400px;
   }
-  
-  
-  
+   
   .adopt{
-    text-decoration: none;
     margin: 1rem;
     padding: .5rem .75rem;
   }

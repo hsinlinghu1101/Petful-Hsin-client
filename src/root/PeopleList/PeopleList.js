@@ -85,12 +85,12 @@ export default class PeopleList extends Component {
                 return (
                     <div key={index}>
                         <div className='People-List first'>{index + 1}. {person}</div>
-                        <button type='button' className='adopt' onClick={this.catConfirmation} disabled={this.state.confirm}>Adopt Cat</button>
-                        <button type='button' className='adopt' onClick={this.dogConfirmation} disabled={this.state.confirm}>Adopt Dog</button>
-                        <button type='button' className='adopt' onClick={this.bothConfirmation} disabled={this.state.confirm}>Adopt Both</button>
+                        <button type='button' className='adopt button' onClick={this.catConfirmation} disabled={this.state.confirm}>Adopt Cat</button>
+                        <button type='button' className='adopt button' onClick={this.dogConfirmation} disabled={this.state.confirm}>Adopt Dog</button>
+                        <button type='button' className='adopt button' onClick={this.bothConfirmation} disabled={this.state.confirm}>Adopt Both</button>
                         {this.state.confirm &&
                             <div>
-                                <h2>Congratulation!</h2><button type='button' onClick={this.handleClose}>close</button>
+                                <h2 className='success'>Congratulation!</h2><button type='button' className='button' onClick={this.handleClose}>close</button>
                             </div>}
                     </div>)
             }
@@ -98,10 +98,10 @@ export default class PeopleList extends Component {
                 return (
                     <div key={index}>
                         <div className='People-List first'>{index + 1}. {person}</div>
-                        <button type='button' className='adopt' onClick={this.dogConfirmation} disabled={this.state.confirm}>Adopt Dog</button>
+                        <button type='button' className='adopt button' onClick={this.dogConfirmation} disabled={this.state.confirm}>Adopt Dog</button>
                         {this.state.confirm &&
                             <div>
-                                <h2>Congratulation!</h2><button type='button' onClick={this.handleClose}>close</button>
+                                <h2 className='success'>Congratulation!</h2><button type='button' className='button' onClick={this.handleClose}>close</button>
                             </div>}
                     </div>)
             }
@@ -110,10 +110,10 @@ export default class PeopleList extends Component {
                 return (
                     <div key={index}>
                         <div className='People-List first'>{index + 1}. {person}</div>
-                        <button type='button' className='adopt' onClick={this.catConfirmation} disabled={this.state.confirm}>Adopt Cat</button>
+                        <button type='button' className='adopt button' onClick={this.catConfirmation} disabled={this.state.confirm}>Adopt Cat</button>
                         {this.state.confirm &&
                             <div>
-                                <h2>Congratulation!</h2><button type='button' onClick={this.handleClose}>close</button>
+                                <h2 className='success'>Congratulation!</h2><button type='button' className='button'onClick={this.handleClose}>close</button>
                             </div>}
                     </div>)
             }
@@ -131,11 +131,13 @@ export default class PeopleList extends Component {
 
         return (
             <div id='People-List'>
+                <div>
                 <h2 className='list'>Current Adopter List</h2>
 
                 {Object.values(this.props.people).map((x, index) => this.generatePeopleJSX(x, index))}
 
                 <button className='join button' onClick={this.handleclicked}>Join the list</button>
+                </div>
                 {this.state.clicked
                     ? <form onSubmit={this.addPerson}>
                         <label htmlFor='newPerson'>Your Name:</label>
